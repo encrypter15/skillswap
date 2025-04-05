@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #E6F0FA 0%, #B3D4FF 100%);
+    min-height: 100vh;
+    color: #1A3C6D;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 60px;
+}
+
+nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+nav button:hover {
+    transform: scale(1.05);
+    background: #45a049;
+}
+
+nav button i {
+    margin-right: 8px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #1A3C6D;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+h2 i {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    color: #1A3C6D;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.skill-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    background: #F5F5F5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #B3D4FF;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4CAF50;
+}
+
+.skill-form button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.skill-form button:hover {
+    background: #45a049;
+}
+
+.skill-form button i {
+    margin-right: 8px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+video {
+    width: 48%;
+    border-radius: 10px;
+    border: 2px solid #B3D4FF;
+}
+
+.badges-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.badges-container div {
+    background: #4CAF50;
+    color: #FFFFFF;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1A3C6D;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    nav button {
+        margin: 5px;
+        padding: 8px 15px;
+    }
+
+    .video-container {
+        flex-direction: column;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .skill-form {
+        flex-direction: column;
+    }
+}
