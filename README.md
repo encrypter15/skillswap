@@ -30,13 +30,11 @@ SkillSwap connects people who want to learn new skills with those willing to tea
 
 ## Installation
 1. Clone the repository
-2. Run `setup_structure.sh` to create directory structure
-3. Run `populate_files.sh` to populate with code
-4. Install PHP dependencies: `composer install`
-5. Install JS dependencies: `cd public && npm install`
-6. Configure database in `api/config.php`
-7. Set up Stripe keys in `api/payments.php`
-8. Start Apache server
+2. Install PHP dependencies: `composer install`
+3. Install JS dependencies: `cd public && npm install`
+4. Configure database in `api/config.php`
+5. Set up Stripe keys in `api/payments.php`
+6. Start Apache server
 
 ## Usage
 - Register/login
